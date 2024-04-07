@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<ctime>
 using namespace std;
 using std::cin;
@@ -26,9 +26,9 @@ void main()
 	setlocale(LC_ALL, "");
 
 #ifdef WHILE
-	int i = 0; //счетчик цикла
-	int n;	//кол-во итераций
-	cout << "Введите кол-во итераций: "; cin >> n;
+	int i = 0; //СЃС‡РµС‚С‡РёРє С†РёРєР»Р°
+	int n;	//РєРѕР»-РІРѕ РёС‚РµСЂР°С†РёР№
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»-РІРѕ РёС‚РµСЂР°С†РёР№: "; cin >> n;
 	while (i < n)
 	{
 		cout << "Hello\n";
@@ -39,7 +39,7 @@ void main()
 #ifdef CLASSWORK
 	int n;
 
-	cout << "Введите количество итераций: "; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№: "; cin >> n;
 	for (
 		int i = 0;
 		i < n;
@@ -56,14 +56,14 @@ void main()
 #ifdef TASK1
 	int factorial = 1;
 	int number;
-	cout << "Введите число: ";
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ";
 	cin >> number;
 
 	for (int i = 1; i <= number; i++)
 	{
 		factorial *= i;
 	}
-	cout << "Факториал числа: " << number << " = " << factorial;
+	cout << "Р¤Р°РєС‚РѕСЂРёР°Р» С‡РёСЃР»Р°: " << number << " = " << factorial;
 #endif // TASK1
 
 #ifdef TASK2
@@ -71,9 +71,9 @@ void main()
 	int pok;
 	int n;
 
-	cout << "Введите основание: ";
+	cout << "Р’РІРµРґРёС‚Рµ РѕСЃРЅРѕРІР°РЅРёРµ: ";
 	cin >> osn;
-	cout << "Введите показатель: ";
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕРєР°Р·Р°С‚РµР»СЊ: ";
 	cin >> pok;
 	n = osn;
 
@@ -82,7 +82,7 @@ void main()
 		n *= osn;
 
 	}
-	cout << "Степень числа: " << n;
+	cout << "РЎС‚РµРїРµРЅСЊ С‡РёСЃР»Р°: " << n;
 #endif // TASK2
 
 #ifdef TASK3
@@ -103,7 +103,7 @@ void main()
 	int a = 0;
 	int b = 1;
 	int c;
-	cout << "Введите число: ";
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ";
 	cin >> number;
 
 	for (int i = 1; i <= number; i++) {
@@ -112,7 +112,7 @@ void main()
 		a = b;
 		b = c;
 		if (i == number)
-			cout << endl << "Количество чисел из ряда Фибоначчи: " << i << endl;
+			cout << endl << "РљРѕР»РёС‡РµСЃС‚РІРѕ С‡РёСЃРµР» РёР· СЂСЏРґР° Р¤РёР±РѕРЅР°С‡С‡Рё: " << i << endl;
 	}
 #endif // TASK4_&_TASK5
 
@@ -120,7 +120,7 @@ void main()
 
 #ifdef FACTORIAL
 	int n;
-	cout << "Введите число: "; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: "; cin >> n;
 	double f = 1;
 	for (int i = 1; i <= n; i++)
 	{
@@ -132,11 +132,11 @@ void main()
 
 #ifdef POWER
 
-	double a;		//основание степени
-	double n;		// показатель степени
-	double N = 1;  // степень 
-	cout << "Введите основание степени: "; cin >> a;
-	cout << "Введите показатель степени: "; cin >> n;
+	double a;		//РѕСЃРЅРѕРІР°РЅРёРµ СЃС‚РµРїРµРЅРё
+	double n;		// РїРѕРєР°Р·Р°С‚РµР»СЊ СЃС‚РµРїРµРЅРё
+	double N = 1;  // СЃС‚РµРїРµРЅСЊ 
+	cout << "Р’РІРµРґРёС‚Рµ РѕСЃРЅРѕРІР°РЅРёРµ СЃС‚РµРїРµРЅРё: "; cin >> a;
+	cout << "Р’РІРµРґРёС‚Рµ РїРѕРєР°Р·Р°С‚РµР»СЊ СЃС‚РµРїРµРЅРё: "; cin >> n;
 	if (n < 0)
 	{
 		a = 1 / a;
@@ -160,7 +160,7 @@ void main()
 
 #ifdef FIBONACCI_1
 	int n;
-	cout << "Введите предельное число: "; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РїСЂРµРґРµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: "; cin >> n;
 	for (int a = 0, b = 1, c = a + b; a <= n; a = b, b = c, c = a + b)
 	{
 		cout << a << "\t";
@@ -172,7 +172,7 @@ void main()
 
 #ifdef NEWTASK1
 	int n, a;
-	cout << "Введите предельное число: "; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РїСЂРµРґРµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: "; cin >> n;
 	for (int i = 2; i <= n; i++)
 	{
 		a = 0;
@@ -187,10 +187,10 @@ void main()
 		if (a == 0)
 			cout << i << "\t";
 	}
-#endif // ПРОСТЫЕ ЧИСЛА
+#endif // РџР РћРЎРўР«Р• Р§РРЎР›Рђ
 
 #ifdef NEWTASK2
-	cout << "Таблица умножения\n\n";
+	cout << "РўР°Р±Р»РёС†Р° СѓРјРЅРѕР¶РµРЅРёСЏ\n\n";
 	for (int i = 1; i <= 10; i++)
 	{
 		for (int j = 1; j <= 10; j++)
@@ -199,10 +199,10 @@ void main()
 		}
 		cout << endl;
 	}
-#endif // ТАБЛИЦА УМНОЖЕНИЯ
+#endif // РўРђР‘Р›РР¦Рђ РЈРњРќРћР–Р•РќРРЇ
 
 #ifdef NEWTASK3
-	cout << "Таблица Пифагора\n";
+	cout << "РўР°Р±Р»РёС†Р° РџРёС„Р°РіРѕСЂР°\n";
 	cout << "\t";
 	for (int i = 1; i <= 10; i++)
 	{
@@ -218,14 +218,14 @@ void main()
 		}
 		cout << endl;
 	}
-#endif // ТАБЛИЦА ПИФАГОРА
+#endif // РўРђР‘Р›РР¦Рђ РџРР¤РђР“РћР Рђ
 
 	//CLASSWORK:
 
 #ifdef SIMPLEX_NUMBERS
 
 	int n;
-	cout << "Введите предельное число: "; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РїСЂРµРґРµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: "; cin >> n;
 	int simplex_counter = 0;
 	time_t start = clock();
 	for (int i = 0; i <= n; i++)
@@ -236,7 +236,7 @@ void main()
 			if (i % j == 0)
 			{
 				simple = false;
-				break; //Ключевое слово 'Break' прерывает текущую итерацию и все последущие
+				break; //РљР»СЋС‡РµРІРѕРµ СЃР»РѕРІРѕ 'Break' РїСЂРµСЂС‹РІР°РµС‚ С‚РµРєСѓС‰СѓСЋ РёС‚РµСЂР°С†РёСЋ Рё РІСЃРµ РїРѕСЃР»РµРґСѓС‰РёРµ
 			}
 		}
 		if (simple)simplex_counter++;
@@ -244,7 +244,7 @@ void main()
 	}
 	time_t end = clock();
 	cout << endl;
-	cout << "Количество простых чисел: " << simplex_counter << endl;
+	cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРѕСЃС‚С‹С… С‡РёСЃРµР»: " << simplex_counter << endl;
 	cout << "Calculated by " << double(end - start) / CLOCKS_PER_SEC << " seconds" << endl;
 #endif // SIMPLEX_NUMBERS
 
@@ -252,7 +252,7 @@ void main()
 
 	for (int i = 1; i <= 10; i++) //Outer for
 	{
-		cout << "Таблица умножения на " << i << ":\n";
+		cout << "РўР°Р±Р»РёС†Р° СѓРјРЅРѕР¶РµРЅРёСЏ РЅР° " << i << ":\n";
 		for (int j = 1; j <= 10; j++) // Inner for
 		{
 			if (i < 10)cout << " ";
